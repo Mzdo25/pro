@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Noreldin | Cybersecurity & Backend Developer</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Apply Inter font family and set dark theme defaults */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d0d0d; /* Very dark background */
+            color: #e5e7eb; /* Light gray text */
+        }
+        /* Custom scroll-snap for smooth navigation */
+        .scroll-section {
+            scroll-snap-align: start;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 4rem 1rem; /* Padding for mobile safety */
+        }
+        /* Style for the professional buttons */
+        .btn-primary {
+            @apply px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-xl hover:bg-indigo-700 transition-all duration-300 transform hover:scale-[1.02];
+        }
+        .btn-secondary {
+            @apply px-6 py-3 border border-indigo-600 text-indigo-400 font-semibold rounded-lg shadow-md hover:bg-indigo-900/30 transition-all duration-300;
+        }
+        /* Custom card style */
+        .custom-card {
+            @apply bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-2xl border border-gray-700/50 transition-all duration-300 hover:border-indigo-500/50 hover:shadow-indigo-900/50;
+        }
+    </style>
+</head>
+<body class="scroll-smooth">
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-gray-900/80 backdrop-blur-md shadow-lg border-b border-gray-700/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="#hero" class="text-2xl font-bold text-indigo-400">Mohamed N.</a>
+                <div class="flex space-x-4">
+                    <a href="#about" class="text-gray-300 hover:text-indigo-400 transition">About</a>
+                    <a href="#skills" class="text-gray-300 hover:text-indigo-400 transition">Skills</a>
+                    <a href="#experience" class="text-gray-300 hover:text-indigo-400 transition">Work</a>
+                    <a href="#contact" class="text-gray-300 hover:text-indigo-400 transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container with Scroll Snap -->
+    <div class="scroll-snap-y-mandatory snap-y overflow-y-scroll h-[calc(100vh-64px)]">
+
+        <!-- 1. Hero Section -->
+        <section id="hero" class="scroll-section bg-cover bg-center" style="background-image: url('https://placehold.co/1920x1080/0d0d0d/1e293b?text=Cybersecurity%20Network');">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                <div class="custom-card p-10 bg-gray-900/80 max-w-2xl mx-auto border-indigo-500">
+                    <!-- Placeholder for professional photo -->
+                    <div class="w-32 h-32 mx-auto mb-6 bg-indigo-600 rounded-full border-4 border-indigo-400 overflow-hidden">
+                        <img src="https://placehold.co/128x128/374151/f3f4f6?text=MN" alt="Mohamed Noreldin" class="object-cover w-full h-full">
+                    </div>
+
+                    <h1 class="text-5xl md:text-6xl font-extrabold text-white leading-tight mb-4">
+                        MOHAMED NORELDIN
+                    </h1>
+                    <p class="text-2xl text-indigo-400 font-medium mb-6">
+                        Cybersecurity Student | SOC Analyst & Backend Developer
+                    </p>
+                    <p class="text-lg text-gray-300 italic mb-8">
+                        "Turning passion for cybersecurity into expertise in building strong and secure digital solutions."
+                    </p>
+
+                    <div class="flex justify-center space-x-4">
+                        <a href="#contact" class="btn-primary">
+                            Get in Touch <i data-lucide="mail" class="w-5 h-5 inline ml-2"></i>
+                        </a>
+                        <!-- Add a link to the PDF resume or a placeholder to download the new one -->
+                        <a href="myportfolio%20(1).pdf" target="_blank" class="btn-secondary">
+                            View Resume <i data-lucide="download" class="w-5 h-5 inline ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. About Me Section -->
+        <section id="about" class="scroll-section bg-gray-900">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold mb-8 text-center text-white">
+                    <span class="text-indigo-400">01.</span> About Me
+                </h2>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="custom-card">
+                        <p class="text-gray-300 text-lg leading-relaxed">
+                            I am a final-year Computer Science student passionate about **cybersecurity and backend development**. My core interests include **SOC analysis, threat detection, incident response, and secure coding**.
+                        </p>
+                        <p class="text-gray-300 text-lg leading-relaxed mt-4">
+                            I have practical, hands-on experience with **SIEM tools (IBM QRadar, ELK Stack)**, **vulnerability assessment**, and **log analysis**. Coupled with strong programming skills in **Python, JavaScript, and SQL**, I am eager to apply my knowledge to build secure, efficient systems and continually grow in the field.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4 text-indigo-400">Education</h3>
+                        <div class="custom-card">
+                            <p class="text-xl font-bold">Bachelor of Engineering, Computer Science</p>
+                            <p class="text-lg text-gray-400">Misr University for Science and Technology (MUST)</p>
+                            <p class="text-md text-gray-500">September 2021 - Present | Current Grade: Good</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Skills Section -->
+        <section id="skills" class="scroll-section bg-gray-800">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold mb-12 text-center text-white">
+                    <span class="text-indigo-400">02.</span> Core Skills
+                </h2>
+                <div class="grid md:grid-cols-3 gap-8">
+
+                    <!-- Skill Card 1: Cybersecurity -->
+                    <div class="custom-card">
+                        <i data-lucide="shield" class="w-8 h-8 text-indigo-400 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-3 text-white">Cybersecurity</h3>
+                        <ul class="space-y-2 text-gray-300 list-disc list-inside">
+                            <li>**SIEM:** IBM QRadar, ELK Stack</li>
+                            <li>Threat Intelligence & Detection</li>
+                            <li>Vulnerability Assessment</li>
+                            <li>Log Analysis & Incident Response</li>
+                            <li>IPS/IDS (Cisco IPS)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Skill Card 2: Programming & Backend -->
+                    <div class="custom-card">
+                        <i data-lucide="code" class="w-8 h-8 text-indigo-400 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-3 text-white">Programming & Development</h3>
+                        <ul class="space-y-2 text-gray-300 list-disc list-inside">
+                            <li>**Python** (Backend/Scripting)</li>
+                            <li>**JavaScript/HTML/CSS**</li>
+                            <li>**SQL** (Database Management)</li>
+                            <li>REST API Development</li>
+                            <li>Secure Coding Practices</li>
+                        </ul>
+                    </div>
+
+                    <!-- Skill Card 3: Networking & Support -->
+                    <div class="custom-card">
+                        <i data-lucide="server" class="w-8 h-8 text-indigo-400 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-3 text-white">Networking & Support</h3>
+                        <ul class="space-y-2 text-gray-300 list-disc list-inside">
+                            <li>Data Communication Protocols</li>
+                            <li>Basic Configuration & Setup</li>
+                            <li>Network Troubleshooting</li>
+                            <li>Secure Network Configurations</li>
+                            <li>Huawei Data Comms Course</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Experience & Projects Section -->
+        <section id="experience" class="scroll-section bg-gray-900 py-16">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold mb-12 text-center text-white">
+                    <span class="text-indigo-400">03.</span> Experience & Projects
+                </h2>
+
+                <div class="space-y-10">
+
+                    <!-- Sub-section: Experience -->
+                    <h3 class="text-3xl font-semibold text-indigo-400 border-b border-indigo-700 pb-2">Professional Experience</h3>
+                    <div class="space-y-6">
+
+                        <!-- Job 1: SOC Bootcamp Participant -->
+                        <div class="custom-card bg-gray-800/80">
+                            <div class="flex justify-between items-start mb-2">
+                                <p class="text-xl font-bold text-white">SOC Bootcamp Participant</p>
+                                <p class="text-sm text-gray-400">Aug 2024 - Sep 2024</p>
+                            </div>
+                            <p class="text-md font-semibold text-indigo-300 mb-3">WE INNOVATE</p>
+                            <ul class="space-y-1 text-gray-300 list-disc list-inside text-sm">
+                                <li>Gained hands-on experience in **threat management, log analysis, and incident response**.</li>
+                                <li>Practiced using **SIEM tools** including **IBM QRadar** and **ELK Stack**.</li>
+                                <li>Trained to detect, investigate, and **respond to security incidents** using professional methodologies.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Job 2: Data Communication Trainee -->
+                        <div class="custom-card bg-gray-800/80">
+                            <div class="flex justify-between items-start mb-2">
+                                <p class="text-xl font-bold text-white">Data Communication Trainee</p>
+                                <p class="text-sm text-gray-400">Jun 2024 - Jul 2024</p>
+                            </div>
+                            <p class="text-md font-semibold text-indigo-300 mb-3">Arab Organization for Industrialization</p>
+                            <ul class="space-y-1 text-gray-300 list-disc list-inside text-sm">
+                                <li>Completed a Huawei-led Data Communication course, learning **core networking concepts and protocols**.</li>
+                                <li>Focused on basic configuration, troubleshooting, and securing network fundamentals.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Sub-section: Projects -->
+                    <h3 class="text-3xl font-semibold text-indigo-400 border-b border-indigo-700 pb-2 pt-6">Key Projects</h3>
+                    <div class="space-y-6">
+
+                        <!-- Project 1: Secure API Development -->
+                        <div class="custom-card bg-gray-800/80">
+                            <p class="text-xl font-bold text-white mb-2">Secure API Development (Personal Project)</p>
+                            <p class="text-sm text-gray-400 mb-3">Backend REST API | Python & SQL</p>
+                            <ul class="space-y-1 text-gray-300 list-disc list-inside text-sm">
+                                <li>Developed a functional backend REST API using **Python** and a **SQL** database.</li>
+                                <li>Implemented critical **secure coding practices** such as input validation, sanitization, and robust authentication mechanisms.</li>
+                            </ul>
+                            <a href="#" class="text-indigo-400 hover:text-indigo-300 mt-2 inline-block text-sm">View Code/Demo <i data-lucide="external-link" class="w-4 h-4 inline ml-1"></i></a>
+                        </div>
+
+                        <!-- Project 2: SOC Log Analysis Simulation -->
+                        <div class="custom-card bg-gray-800/80">
+                            <p class="text-xl font-bold text-white mb-2">SOC Log Analysis Simulation</p>
+                            <p class="text-sm text-gray-400 mb-3">Threat Detection & Incident Investigation</p>
+                            <ul class="space-y-1 text-gray-300 list-disc list-inside text-sm">
+                                <li>Simulated real-world security incidents using **IBM QRadar** and **ELK Stack**.</li>
+                                <li>Conducted full log analysis and incident investigation exercises, identifying and documenting threats.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Sub-section: Achievements -->
+                    <h3 class="text-3xl font-semibold text-indigo-400 border-b border-indigo-700 pb-2 pt-6">Achievements</h3>
+                    <ul class="space-y-3 text-gray-300 text-lg">
+                        <li><span class="text-indigo-400 font-semibold mr-2">&#9679;</span> **Google Cybersecurity Specialization (2024):** Gained strong foundational knowledge in cybersecurity concepts, tools, and best practices.</li>
+                        <li><span class="text-indigo-400 font-semibold mr-2">&#9679;</span> **Vice Head of Cybersecurity Committee, IEEE MUST SB (2024-Present):** Contributing to student-led initiatives, workshops, and knowledge sharing.</li>
+                        <li><span class="text-indigo-400 font-semibold mr-2">&#9679;</span> **SOC Bootcamp Completion (WE INNOVATE, 2024):** Hands-on training with SIEM tools, incident response, and log analysis.</li>
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Contact Section -->
+        <section id="contact" class="scroll-section bg-gray-800">
+            <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-bold mb-6 text-white">
+                    <span class="text-indigo-400">04.</span> Get In Touch
+                </h2>
+                <p class="text-xl text-gray-300 mb-10">
+                    I'm currently seeking opportunities in SOC Analysis or Backend Security roles. My inbox is always open!
+                </p>
+                <div class="flex flex-col space-y-4">
+                    <a href="mailto:your_email@example.com" class="btn-primary flex items-center justify-center">
+                        <i data-lucide="send" class="w-5 h-5 mr-3"></i>
+                        Email Me: your_email@example.com
+                    </a>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="btn-secondary flex items-center justify-center">
+                        <i data-lucide="linkedin" class="w-5 h-5 mr-3"></i>
+                        Connect on LinkedIn
+                    </a>
+                    <p class="text-gray-400 pt-2">
+                        <i data-lucide="phone" class="w-4 h-4 inline mr-2"></i> Phone: +0201032670743
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 border-t border-gray-700/50 py-4">
+            <div class="max-w-6xl mx-auto text-center text-sm text-gray-500">
+                &copy; <script>document.write(new Date().getFullYear())</script> Mohamed Noreldin. Built with Tailwind CSS.
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Script to initialize Lucide icons -->
+    <script>
+        lucide.createIcons();
+
+        // Simple script for smooth scrolling to anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
